@@ -3,7 +3,6 @@ import { Container, Button } from "../../globalStyles";
 
 export const ContactContainer = styled(Container)`
     ${Container};
-    display: flex;
     justify-content: center;
     align-items: center;
 `;

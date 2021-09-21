@@ -5,7 +5,6 @@ import web from "../../assets/WebSm.png";
 
 export const DividerContainer = styled(Container)`
     ${Container};
-    display: flex;
     justify-content: center;
     align-items: center;
 `;
@@ -16,11 +15,16 @@ export const ProjectsContainer = styled(Container)`
     display: grid;
     grid-template-columns: repeat(3,325px);
     justify-content: space-between;
+
+    @media screen and (max-width: 1180px){
+        grid-template-columns: repeat(2,325px);
+        justify-content: space-evenly;
+    }
 `;
 
 export const ProjectCard = styled(Card)`
     ${Card};
-    margin: 20px 0;
+    margin: 40px 0;
     transition: all 0.8s ease;
 
     &:hover{

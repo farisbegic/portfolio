@@ -17,6 +17,12 @@ export const Container = styled.div`
     width: 100%;
     max-width: 1120px;
     margin: 100px auto;
+    display: flex;
+
+    @media screen and (max-width: 1180px){
+        flex-direction: column;
+        margin: 50px auto;
+    }
 `;
 
 export const Button = styled.button`
@@ -39,8 +45,17 @@ export const Button = styled.button`
     }
 `;
 
-export const SeparationLine = styled.hr`
-    border: 1px solid rgba(228, 228, 228, 1);
+export const SectionContainer = styled.div`
+    width: 100%;
+    max-width: 1120px;
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width: 1180px){
+        padding: 0 40px;
+    }
 `;
 
 export const SectionTitle = styled.h2`

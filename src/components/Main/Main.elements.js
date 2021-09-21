@@ -1,15 +1,18 @@
 import styled from "styled-components";
-import { Container, Button, SeparationLine } from '../../globalStyles';
-import image from "../../assets/portrait.png";
+import { Container, Button } from '../../globalStyles';
 import github from "../../assets/GitHub.png";
 import twitter from "../../assets/Twitter.png";
 import linkedin from "../../assets/LinkedIn.png";
 import cv from "../../download/CV.pdf";
 
 export const MainContainer = styled(Container)`
-    display: flex;
     justify-content: space-between;
     ${Container};
+
+    .portrait {
+        width: 504px;
+        margin: 20px auto;
+    }
 `;
 
 export const TextContainer = styled.div`
@@ -17,6 +20,16 @@ export const TextContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     width: 504px;
+
+    @media screen and (max-width: 1180px){
+        margin: 30px auto;
+    }
+`;
+
+export const Divider = styled.hr`
+    border: 1px solid rgba(228, 228, 228, 1);
+    width: 504px;
+    margin: 20px 0;
 `;
 
 export const SocialIcons = styled.div`
@@ -62,10 +75,6 @@ export const Btn = () => {
     return <a href={cv} download><DownloadButton>Download my CV</DownloadButton> </a>
 }
 
-export const PortraitImage = () => {
-    return <img src={image} alt="portrait" />
-}
-
 export const Twitter = () => {
     return <a href="https://twitter.com/fabegic" target="_blank" rel="noopener noreferrer"><img src={twitter} alt="twitter" /></a>
 }
@@ -77,8 +86,3 @@ export const GitHub = () => {
 export const LinkedIn = () => {
     return <a href="https://www.linkedin.com/in/begicfaris/" target="_blank" rel="noopener noreferrer"><img src={linkedin} alt="linkedin" /></a>
 }
-
-export const Divider = styled(SeparationLine)`
-    width: 417.06px;
-    margin: 20px 0;
-`;

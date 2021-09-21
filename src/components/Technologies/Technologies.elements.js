@@ -2,7 +2,6 @@ import styled from "styled-components";
 import { Card, Container } from "../../globalStyles";
 
 export const TechnologiesContainer = styled(Container)`
-    display: flex;
     justify-content: space-evenly;
     align-items: center;
 `;
@@ -12,6 +11,7 @@ export const TechnologiesCard = styled(Card)`
     flex-direction: column;
     justify-content: space-between;
     padding: 50px;
+    margin: 40px auto;
 `;
 
 export const Technology = styled.div`

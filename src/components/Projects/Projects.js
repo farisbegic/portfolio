@@ -1,7 +1,7 @@
 import React from "react";
-import { SectionTitle, SectionLine } from "../../globalStyles";
+import { SectionTitle, SectionLine, SectionContainer } from "../../globalStyles";
 import {v4 as uuid4} from "uuid";
-import { ProjectsContainer, ProjectCard, ProjectImage, ProjectInformation, ProjectTitle, ProjectDescription, GitHub, WebPage, DividerContainer, IconGroup } from "./Projects.elements";
+import { ProjectsContainer, ProjectCard, ProjectImage, ProjectInformation, ProjectTitle, ProjectDescription, GitHub, WebPage, IconGroup } from "./Projects.elements";
 import visitbosnia from "../../assets/visitbosnia.png";
 import zajafon from "../../assets/zajafon.png";
 import rubicon360 from "../../assets/rubicon360.png";
@@ -36,10 +36,10 @@ export const projects = [
 const Projects = () => {
     return (
         <>
-            <DividerContainer>
+            <SectionContainer>
                 <SectionTitle>PROJECTS</SectionTitle>
                 <SectionLine />
-            </DividerContainer>
+            </SectionContainer>
             <ProjectsContainer>
                 {projects.map(( {id, title, image, description, github, web} ) => (
                     <ProjectCard key={id}>

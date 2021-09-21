@@ -1,5 +1,6 @@
 import React from "react";
-import { MainContainer, TextContainer, SocialIcons, Icon, PreHeader, Header, AboutText, PortraitImage, Divider, Twitter, GitHub, LinkedIn, Btn } from "./Main.elements";
+import { MainContainer, TextContainer, SocialIcons, Icon, PreHeader, Header, AboutText, Divider, Twitter, GitHub, LinkedIn, Btn } from "./Main.elements";
+import image from "../../assets/portrait.png";
 
 const Main = () => {
     return (
@@ -23,7 +24,7 @@ const Main = () => {
                     </AboutText>
                     <Btn />
                 </TextContainer>
-                <PortraitImage />
+                <img src={image} alt="portrait" className="portrait"/>
             </MainContainer>
         </>
     )

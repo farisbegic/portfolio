@@ -1,5 +1,5 @@
 import React from "react";
-import { SectionTitle, SectionLine } from "../../globalStyles";
+import { SectionTitle, SectionLine, SectionContainer } from "../../globalStyles";
 import { TechnologiesContainer, TechnologiesCard, Technology, IconText } from "./Technologies.elements";
 import html5 from "../../assets/html5.png";
 import css3 from "../../assets/css3.png";
@@ -15,10 +15,10 @@ import mongodb from "../../assets/mongodb.png";
 const Technologies = () => {
     return (
         <>
-            <TechnologiesContainer>
+            <SectionContainer>
                 <SectionTitle>TECHNOLOGIES</SectionTitle>
                 <SectionLine />
-            </TechnologiesContainer>
+            </SectionContainer>
             <TechnologiesContainer>
                 <TechnologiesCard>
                     <Technology>

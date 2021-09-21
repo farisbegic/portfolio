@@ -1,16 +1,17 @@
 import React from "react";
-import { EducationContainer, EducationTimeline, Gymnasium, University, EducationTitle, Date, EducationDescription } from "./Education.elements";
-import { SectionLine, SectionTitle } from "../../globalStyles";
+import { EducationContainer, Gymnasium, University, EducationTitle, Date, EducationDescription } from "./Education.elements";
+import { SectionLine, SectionTitle, SectionContainer } from "../../globalStyles";
+import education from "../../assets/education.png";
 
 const Education = () => {
     return (
         <>
-            <EducationContainer>
+            <SectionContainer>
                 <SectionTitle>EDUCATION</SectionTitle>
                 <SectionLine />
-            </EducationContainer>    
+            </SectionContainer>    
             <EducationContainer>
-               <EducationTimeline />
+                <img className="timeline" src={education} alt="education-timeline"/>
                <Gymnasium>
                    <EducationTitle>GIMNAZIJA "VISOKO" VISOKO</EducationTitle>
                    <Date>2015 - 2019</Date>

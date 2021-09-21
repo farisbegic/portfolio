@@ -1,6 +1,6 @@
 import React, { useRef } from "react"
 import { ContactContainer, Input, SendButton, Textarea } from "./Contact.elements"
-import { SectionTitle, SectionLine } from "../../globalStyles"
+import { SectionTitle, SectionLine, SectionContainer } from "../../globalStyles"
 import emailjs from "emailjs-com";
 import configData from "../../config.json";
 
@@ -21,10 +21,10 @@ const Contact = () => {
 
     return (
         <>
-            <ContactContainer>
+            <SectionContainer>
                 <SectionTitle>CONTACT</SectionTitle>
                 <SectionLine />
-            </ContactContainer>
+            </SectionContainer>
 
             <ContactContainer>
                 <form ref={form} onSubmit={sendEmail}>
