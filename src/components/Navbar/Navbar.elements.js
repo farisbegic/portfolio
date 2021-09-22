@@ -7,14 +7,15 @@ export const Nav = styled.nav`
     width: 530px;
     margin: 40px auto;
     font-family: "Roboto", sans-serif;
-    @media screen and (max-width: 730px){
+    @media screen and (max-width: 750px){
         margin: auto;
     }
 `;
 
 export const HamburgerIcon = styled.div`
     display: none;
-    @media screen and (max-width: 730px){
+    @media screen and (max-width: 750px){
+        color: #000;
         display: block;
         position: absolute;
         right: 0;
@@ -31,7 +32,8 @@ export const NavMenu = styled.ul`
     align-items: center;
     list-style: none;
     text-align: center;
-    @media screen and (max-width: 730px){
+    @media screen and (max-width: 750px){
+        overflow: hidden;
         z-index: 9;
         display: flex;
         justify-content: center;
@@ -52,7 +54,9 @@ export const NavItem = styled.li`
     height: 60px;
     border-bottom: 2px solid transparent;
 
-    @media screen and (max-width: 730px){
+    @media screen and (max-width: 750px){
+        font-size: 25px;
+        height: 80px;
         width: 100%;
 
         &:hover{
@@ -73,7 +77,7 @@ export const NavLink = styled(Link)`
         color: #FF647C;
     }
 
-    @media screen and (max-width: 730px){
+    @media screen and (max-width: 750px){
         color: #ffff;
         text-align: center;
         padding: 2rem;

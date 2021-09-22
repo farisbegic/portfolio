@@ -5,6 +5,19 @@ export const ContactContainer = styled(Container)`
     ${Container};
     justify-content: center;
     align-items: center;
+
+    form {
+        @media screen and (max-width: 700px){
+            width: 100%;
+            padding: 0 40px;
+        }
+    }
+
+    ::placeholder{
+        @media screen and (max-width: 700px){
+            font-size: 6px;
+        }
+    }
 `;
 
 export const Input = styled.input`

@@ -10,8 +10,13 @@ export const MainContainer = styled(Container)`
     ${Container};
 
     .portrait {
-        width: 504px;
+        width: 100%;
+        padding: 10px 40px;
         margin: 20px auto;
+
+        @media screen and (max-width: 1180px){
+            display: none;
+        }
     }
 `;
 
@@ -19,7 +24,8 @@ export const TextContainer = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 504px;
+    width: 100%;
+    padding: 10px 40px;
 
     @media screen and (max-width: 1180px){
         margin: 30px auto;
@@ -28,7 +34,7 @@ export const TextContainer = styled.div`
 
 export const Divider = styled.hr`
     border: 1px solid rgba(228, 228, 228, 1);
-    width: 504px;
+    width: 100%;
     margin: 20px 0;
 `;
 
@@ -46,6 +52,10 @@ export const PreHeader = styled.h4`
     padding: 15px 0%;
     font-weight: bold;
     font-family: "Roboto", sans-serif;
+
+    @media screen and (max-width: 500px){
+        font-size: 13px;
+    }
 `;
 
 export const Header = styled.h1`
@@ -53,6 +63,10 @@ export const Header = styled.h1`
     font-size: 60px;
     font-weight: normal;
     font-family: "Gilroy-Medium", sans-serif;
+
+    @media screen and (max-width: 500px){
+        font-size: 40px;
+    }
 `;
 
 export const AboutText = styled.p`
@@ -63,12 +77,20 @@ export const AboutText = styled.p`
     font-family: "Gilroy-Medium", sans-serif;
     letter-spacing: 0.02em;
     line-height: 25px;
+
+    @media screen and (max-width: 500px){
+        font-size: 12px;
+    }
 `; 
 
 const DownloadButton = styled(Button)`
     ${Button};
     width: 325px;
     cursor: pointer;
+
+    @media screen and (max-width: 1180px){
+        width:100%;
+    }
 `;
 
 export const Btn = () => {

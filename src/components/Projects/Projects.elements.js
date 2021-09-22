@@ -20,6 +20,10 @@ export const ProjectsContainer = styled(Container)`
         grid-template-columns: repeat(2,325px);
         justify-content: space-evenly;
     }
+
+    @media screen and (max-width: 700px){
+        grid-template-columns: repeat(1,325px);
+    }
 `;
 
 export const ProjectCard = styled(Card)`

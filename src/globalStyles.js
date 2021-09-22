@@ -62,6 +62,10 @@ export const SectionTitle = styled.h2`
     font-family: "Gilroy-Medium";
     font-size: 28px;
     margin-right: 10px;
+
+    @media screen and (max-width: 500px){
+        font-size: 24px;
+    }
 `;
 
 export const SectionLine = styled.hr`

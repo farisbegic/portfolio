@@ -12,6 +12,11 @@ export const EducationContainer = styled(Container)`
             display: none;
         }
     }
+
+    @media screen and (max-width: 750px){
+        width: 100%;
+        margin: 0 auto;
+    }
 `;
 
 const TimelineBox = styled.div`
@@ -31,8 +36,8 @@ export const Gymnasium = styled(TimelineBox)`
         position: static;
         border-radius: 5px;
         text-align: left;
-        width: 420px;
-        padding: 10px;
+        width: 100%;
+        padding: 0 40px;
     }
 `;
 
@@ -49,24 +54,38 @@ export const University = styled(TimelineBox)`
         border-radius: 5px;
         text-align: left;
         margin: 25px 0;
-        padding: 10px;
+        padding: 10px 40px;
+        width: 100%;
     }
 `;
 
 
 export const EducationTitle = styled(Title)`
     ${Title};
-    font-size: 20px;
+    font-size: 25px;
+
+    @media screen and (max-width: 500px){
+        font-size: 18px;
+    }
 `;
 
 export const EducationDescription = styled(Description)`
     ${Description};
-    font-size: 15px;
+    font-size: 18px;
+
+    @media screen and (max-width: 500px){
+        font-size: 14px;
+        word-wrap: break-word;
+    }
 `;
 
 export const Date = styled.p`
     font-family: "Gilroy-Light";
     color: rgba(0, 0, 0, 0.8);
-    font-size: 17px;
+    font-size: 19px;
     padding: 10px 0;
+
+    @media screen and (max-width: 500px){
+        font-size: 15px;
+    }
 `;
