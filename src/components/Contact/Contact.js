@@ -44,7 +44,7 @@ import config from "../../config.json";
 
     return (
         <>
-            <SectionContainer>
+            <SectionContainer id="contact">
                 <SectionTitle>CONTACT</SectionTitle>
                 <SectionLine />
             </SectionContainer>

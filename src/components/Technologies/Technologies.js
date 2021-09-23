@@ -15,7 +15,7 @@ import mongodb from "../../assets/mongodb.png";
 const Technologies = () => {
     return (
         <>
-            <SectionContainer>
+            <SectionContainer id="technologies">
                 <SectionTitle>TECHNOLOGIES</SectionTitle>
                 <SectionLine />
             </SectionContainer>

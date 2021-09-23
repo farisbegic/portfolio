@@ -6,7 +6,7 @@ import education from "../../assets/education.png";
 const Education = () => {
     return (
         <>
-            <SectionContainer>
+            <SectionContainer id="education">
                 <SectionTitle>EDUCATION</SectionTitle>
                 <SectionLine />
             </SectionContainer>    

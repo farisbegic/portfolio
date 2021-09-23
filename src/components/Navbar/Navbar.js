@@ -13,11 +13,11 @@ const Navbar = () => {
                     {click ? <FaTimes style={{color: "#fff"}} /> : <FaBars style={{color: "#FF647C"}}/>}
                 </HamburgerIcon>
                 <NavMenu onClick={handleClick} click={click}>
-                    <NavItem><NavLink to="#home">Home</NavLink></NavItem>
-                    <NavItem><NavLink to="#education">Education</NavLink></NavItem>
-                    <NavItem><NavLink to="#projects">Projects</NavLink></NavItem>
-                    <NavItem><NavLink to="#skills">Skills</NavLink></NavItem>
-                    <NavItem><NavLink to="#contact">Contact</NavLink></NavItem>
+                    <NavItem><NavLink href="#home">Home</NavLink></NavItem>
+                    <NavItem><NavLink href="#education">Education</NavLink></NavItem>
+                    <NavItem><NavLink href="#projects">Projects</NavLink></NavItem>
+                    <NavItem><NavLink href="#technologies">Technologies</NavLink></NavItem>
+                    <NavItem><NavLink href="#contact">Contact</NavLink></NavItem>
                 </NavMenu>
             </Nav>
         </>

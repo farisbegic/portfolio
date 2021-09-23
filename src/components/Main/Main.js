@@ -5,7 +5,7 @@ import image from "../../assets/portrait.png";
 const Main = () => {
     return (
         <>
-            <MainContainer>
+            <MainContainer id="home">
                 <TextContainer>
                     <SocialIcons>
                         <Icon><Twitter /></Icon>

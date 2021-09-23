@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import {Link} from 'react-router-dom';
 
 export const Nav = styled.nav`
     display: flex;
@@ -69,7 +68,7 @@ export const NavItem = styled.li`
     }
 `;
 
-export const NavLink = styled(Link)`
+export const NavLink = styled.a`
     color: #000;
     display: flex;
     align-items: center;

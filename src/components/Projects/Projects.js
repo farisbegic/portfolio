@@ -36,7 +36,7 @@ export const projects = [
 const Projects = () => {
     return (
         <>
-            <SectionContainer>
+            <SectionContainer id="projects">
                 <SectionTitle>PROJECTS</SectionTitle>
                 <SectionLine />
             </SectionContainer>
