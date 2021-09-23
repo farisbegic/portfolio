@@ -15,15 +15,19 @@ export const Nav = styled.nav`
 export const HamburgerIcon = styled.div`
     display: none;
     @media screen and (max-width: 750px){
-        color: #000;
         display: block;
         position: absolute;
         right: 0;
+        top: 27px;
         transform: translate(-100%, 60%);
         font-size: 1.8rem;
         cursor: pointer;
         z-index: 10;
         margin: 40px auto;
+
+        &::active {
+            color: #fff;
+        }
     }
 `;
 
@@ -41,7 +45,7 @@ export const NavMenu = styled.ul`
         width: 100%;
         height: 100vh;
         position: fixed;
-        left: ${({click}) => (click ? 0 : '-100%')};
+        left: ${({click}) => (click ? 0 : '100%')};
         opacity: 1;
         transition: all 0.5s ease;
         background: #FF647C;

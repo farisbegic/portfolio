@@ -10,7 +10,7 @@ const Navbar = () => {
         <>
             <Nav>
                 <HamburgerIcon onClick={handleClick}>
-                    {click ? <FaTimes /> : <FaBars />}
+                    {click ? <FaTimes style={{color: "#fff"}} /> : <FaBars style={{color: "#FF647C"}}/>}
                 </HamburgerIcon>
                 <NavMenu onClick={handleClick} click={click}>
                     <NavItem><NavLink to="#home">Home</NavLink></NavItem>
