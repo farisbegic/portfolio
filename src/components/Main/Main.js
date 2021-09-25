@@ -20,7 +20,7 @@ const Main = () => {
                     </Header>
                     <Divider />
                     <AboutText>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    A third-year student in the field of Computer Sciences who seeks to be a Full Stack Web Developer. When I finished high school, my passion for Web Development began and brought me to the faculty of Computer Science, where I started my journey.I am an enthusiastic person striving to become an excellent Software Developer. I always work towards improving in all areas and therefore use every opportunity to the greatest extent possible. I love meeting people with the same interest and objectives as mine.
                     </AboutText>
                     <Btn />
                 </TextContainer>
