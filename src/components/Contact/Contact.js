@@ -4,7 +4,6 @@ import { SectionTitle, SectionLine, SectionContainer } from "../../globalStyles"
 import emailjs from "emailjs-com";
 import configData from "../../config.json";
 import Recaptcha from "react-recaptcha";
-import config from "../../config.json";
 
     const Contact = () => {
         const form = useRef();
@@ -56,7 +55,7 @@ import config from "../../config.json";
                     <Textarea placeholder="Message" name="message" required/>
                     <SendButton type="submit" value="Send" onClick={handleSubscribe}>Send</SendButton>
                     <Recaptcha
-                        sitekey={config["site-key"]}
+                        sitekey={configData.site_key}
                         render="onload"
                         style= {{transform: "scale(0.77)", transformOrigin: "0 0"}}
                         onloadCallback={onloadCallback}
