@@ -3,9 +3,12 @@ import { ContactContainer, Input, SendButton, Textarea } from "./Contact.element
 import { SectionTitle, SectionLine, SectionContainer } from "../../globalStyles"
 import emailjs from "emailjs-com";
 import configData from "../../config.json";
-import Recaptcha from "react-recaptcha";
+import ReCAPTCHA from "react-recaptcha";
 
     const Contact = () => {
+
+        const [verified, setVerify] = useState(false);
+
         const form = useRef();
       
         const sendEmail = (e) => {
@@ -20,15 +23,8 @@ import Recaptcha from "react-recaptcha";
                 console.log(error.text);
             });
 
-            e.target.reset();
     };
 
-    const [verified, setVerify] = useState(false);
-
-        const onloadCallback = () => {
-            console.log("Captcha successfully loaded!");
-        }
-    
         const handleSubscribe = () => {
             if (!verified){
                 alert("Please verify that you are a human");
@@ -54,11 +50,10 @@ import Recaptcha from "react-recaptcha";
                     <Input placeholder="Email" type="email" name="email" style ={{margin: "10px 0"}} required/>
                     <Textarea placeholder="Message" name="message" required/>
                     <SendButton type="submit" value="Send" onClick={handleSubscribe}>Send</SendButton>
-                    <Recaptcha
+                    <ReCAPTCHA
                         sitekey={configData.site_key}
                         render="onload"
                         style= {{transform: "scale(0.77)", transformOrigin: "0 0"}}
-                        onloadCallback={onloadCallback}
                         verifyCallback={verifyCallback}
                     />
                 </form>
