@@ -7,6 +7,7 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     scroll-behavior: smooth;
     overflow-x: none;
+    font-family: "Gilroy-Medium",sans-serif;
     
     ::selection{
         background-color: #FF647C;

@@ -29,6 +29,7 @@ export const ProjectsContainer = styled(Container)`
 export const ProjectCard = styled(Card)`
     ${Card};
     margin: 40px 0;
+    height: auto;
     transition: all 0.8s ease;
 
     &:hover{
@@ -36,10 +37,14 @@ export const ProjectCard = styled(Card)`
     }
 `;
 
+export const ImageSection = styled.div`
+  width: 100%;
+`;
+
 export const ProjectImage = styled.img`
     width: 100%;
     max-width: 325px;
-    height: 251px;
+    height: 170px;
     border-radius: 9px 9px 0 0;
     object-fit: cover;
 `;
