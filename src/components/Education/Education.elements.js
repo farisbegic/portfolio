@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import { Container, Title, Description } from "../../globalStyles";
+import { VerticalTimeline }  from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
 
 export const EducationContainer = styled(Container)`
     ${Container};
@@ -59,6 +61,15 @@ export const University = styled(TimelineBox)`
     }
 `;
 
+export const TimelineElements = styled(VerticalTimeline)`
+    ${VerticalTimeline};
+    width: 100%;
+    max-width: 1120px;
+    @media screen and (max-width: 1180px){
+      width: auto;
+      padding: 0 40px;
+    }
+`
 
 export const EducationTitle = styled(Title)`
     ${Title};

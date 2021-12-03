@@ -2,7 +2,15 @@ import React from "react";
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import {FaSchool, FaUniversity, MdDeveloperMode, IoIosSchool} from "react-icons/all";
 import 'react-vertical-timeline-component/style.min.css';
-import { EducationContainer, Gymnasium, University, EducationTitle, Date, EducationDescription } from "./Education.elements";
+import {
+    EducationContainer,
+    Gymnasium,
+    University,
+    EducationTitle,
+    Date,
+    EducationDescription,
+    TimelineElements
+} from "./Education.elements";
 import { SectionLine, SectionTitle, SectionContainer } from "../../globalStyles";
 import education from "../../assets/education.png";
 
@@ -13,7 +21,7 @@ const Education = () => {
                 <SectionTitle>EDUCATION</SectionTitle>
                 <SectionLine />
             </SectionContainer>
-            <VerticalTimeline>
+            <TimelineElements>
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
                     date="2015 - 2019"
@@ -62,7 +70,7 @@ const Education = () => {
                         Web Development Department
                     </p>
                 </VerticalTimelineElement>
-            </VerticalTimeline>
+            </TimelineElements>
             {/*}
             <SectionContainer id="education">
                 <SectionTitle>EDUCATION</SectionTitle>

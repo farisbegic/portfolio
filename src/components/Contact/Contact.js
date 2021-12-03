@@ -16,7 +16,7 @@ import ReCAPTCHA from "react-recaptcha";
       
           emailjs.sendForm(configData.service_id, configData.template_id, form.current, configData.user_id)
             .then((result) => {
-                if (result.status === 200){
+                if (result.status === 200 && verified){
                     alert("Message has been sent!");
                 }
             }, (error) => {
@@ -34,6 +34,7 @@ import ReCAPTCHA from "react-recaptcha";
         const verifyCallback = (response) => {
             if (response){
                 setVerify(!verified);
+                console.log(verified);
             }
         }
 
