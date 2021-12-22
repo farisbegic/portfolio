@@ -51,8 +51,8 @@ export const projects = [
         title: "OPTIKA BEGIĆ",
         image: optikabegic,
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
-        github: "https://github.com/farisbegic/portfolio",
-        web: "https://optikabegic.com"
+        github: "https://github.com/farisbegic/optika-begic",
+        web: "https://optika-begic.vercel.app/"
     },
     {
         id: uuid4(),
@@ -60,7 +60,7 @@ export const projects = [
         image: oznoj,
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
         github: "https://github.com/farisbegic/oznoji",
-        web: null
+        web: "https://oznoj.vercel.app/"
     },
     {
         id: uuid4(),
