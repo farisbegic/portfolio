@@ -20,6 +20,7 @@ import tindog from "../../assets/tindog.png";
 import optikabegic from "../../assets/optikabegic.png";
 import oznoj from "../../assets/oznoj.png";
 import fls from "../../assets/fls.png";
+import askit from "../../assets/ask-it.png"
 
 export const projects = [
     {
@@ -78,6 +79,14 @@ export const projects = [
         github: "https://github.com/farisbegic/tin-dog",
         web: "https://farisbegic.github.io/tin-dog/"
     },
+    {
+        id: uuid4(),
+        title: "Ask.it",
+        image: askit,
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
+        github: "https://github.com/farisbegic/askit-frontend",
+        web: "http://ask-it-frontend.herokuapp.com/"
+    }
 ]
 
 const Projects = () => {
