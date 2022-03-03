@@ -21,6 +21,7 @@ import optikabegic from "../../assets/optikabegic.png";
 import oznoj from "../../assets/oznoj.png";
 import fls from "../../assets/fls.png";
 import askit from "../../assets/ask-it.png"
+import imtexter from "../../assets/imtexter.png"
 
 export const projects = [
     {
@@ -86,6 +87,13 @@ export const projects = [
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
         github: "https://github.com/farisbegic/askit-frontend",
         web: "http://ask-it-frontend.herokuapp.com/"
+    },
+    {
+        id: uuid4(),
+        title: "ImTexter",
+        image: imtexter,
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
+        web: "https://imtexter.netlify.app/"
     }
 ]
 
