@@ -1,11 +1,10 @@
-import React, { useRef, useState } from "react"
-import { ContactContainer, Input, SendButton, Textarea } from "./Contact.elements"
-import { SectionTitle, SectionLine, SectionContainer } from "../../globalStyles"
+import React, {useRef, useState} from "react"
+import {ContactContainer, Input, SendButton, Textarea} from "./Contact.elements"
+import {SectionContainer, SectionLine, SectionTitle} from "../../globalStyles"
 import emailjs from "emailjs-com";
-import configData from "../../config.json";
 import ReCAPTCHA from "react-recaptcha";
 
-    const Contact = () => {
+const Contact = () => {
 
         const [verified, setVerify] = useState(false);
 
@@ -14,7 +13,7 @@ import ReCAPTCHA from "react-recaptcha";
         const sendEmail = (e) => {
           e.preventDefault();
       
-          emailjs.sendForm(configData.service_id, configData.template_id, form.current, configData.user_id)
+          emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, form.current, process.env.REACT_APP_USER_ID)
             .then((result) => {
                 if (result.status === 200 && verified){
                     alert("Message has been sent!");
@@ -52,7 +51,7 @@ import ReCAPTCHA from "react-recaptcha";
                     <Textarea placeholder="Message" name="message" required/>
                     <SendButton type="submit" value="Send" onClick={handleSubscribe}>Send</SendButton>
                     <ReCAPTCHA
-                        sitekey={configData.site_key}
+                        sitekey={process.env.REACT_APP_SITE_KEY}
                         render="onload"
                         style= {{transform: "scale(0.77)", transformOrigin: "0 0"}}
                         verifyCallback={verifyCallback}
