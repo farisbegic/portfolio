@@ -9,6 +9,7 @@ import {db} from "../../firebase";
 
 const Education = () => {
     const [education, setEducation] = useState([]);
+
     const educationData = async () => {
         const querySnapshot = await query(collection(db, 'education'), orderBy('number', 'asc'));
         const queryData = await getDocs(querySnapshot);
@@ -22,6 +23,7 @@ const Education = () => {
     useEffect(() => {
         educationData();
     }, []);
+
     return (
         <>
             <SectionContainer id="education">
